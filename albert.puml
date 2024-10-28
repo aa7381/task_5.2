@@ -1,0 +1,41 @@
+@startuml
+interface flyable {
++ void fly()
+}
+
+class bird {
++ String eat()
++ String makesound()
++ void fly()
+}
+
+interface runnable {
++ void run()
+}
+
+abstract class animal {
++ {abstract}String makesound()
++ {abstract}String eat()
+}
+
+class dog {
++ String eat()
++ String makesound()
++ void run()
+}
+
+class cat {
++ String eat()
++ String makesound()
++ void run()
+}
+
+
+
+flyable <|.. bird
+animal <|-- bird
+runnable <|.. dog
+animal <|-- dog
+runnable <|.. cat
+animal <|-- cat
+@enduml
