@@ -1,0 +1,22 @@
+@startuml
+class dog {
++ String eat()
++ String makesound()
+}
+class cat {
++ String eat()
++ String makesound()
+}
+class bird {
++ String eat()
++ String makesound()
+
+}
+
+
+
+animal <|-- dog
+animal <|-- cat
+animal <|-- bird
+
+@enduml
